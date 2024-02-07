@@ -1,0 +1,36 @@
+.header {
+  background-color: #000;
+  &__offer {
+    background-color: rgb(236, 101, 102);
+    font-family: $fontInter;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: $mainColor;
+    margin-bottom: 24px;
+  }
+
+  .logo-container {
+    padding: 14px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    .logo {
+      justify-self: center;
+    }
+    .burger-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 4px;
+      padding: 13px 10px;
+      div {
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+      }
+    }
+  }
+}

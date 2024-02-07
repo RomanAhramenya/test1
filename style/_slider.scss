@@ -1,0 +1,30 @@
+.carousel {
+  width: 100%;
+  overflow-x: scroll;
+  user-select: none;
+  margin-bottom: 20px;
+  &__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+
+    gap: 10px;
+    img {
+      width: 345px;
+      height: 345px;
+      pointer-events: none;
+    }
+  }
+}
+.carousel::-webkit-scrollbar {
+  border-radius: 5px;
+}
+.carousel::-webkit-scrollbar-track {
+  background: #ebeae8; /* цвет дорожки */
+  border-radius: 5px;
+}
+.carousel::-webkit-scrollbar-thumb {
+  background-color: #a0a0a0; /* цвет плашки */
+  border-radius: 5px; /* закругления плашки */
+
+  border: 3px solid #ebeae8; /* padding вокруг плашки */
+}
