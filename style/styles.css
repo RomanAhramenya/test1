@@ -152,6 +152,10 @@ a {
   margin: 0 auto;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .header {
   background-color: #000;
 }
@@ -238,6 +242,9 @@ a {
 }
 .nav__list .nav__item:active .nav__item-text {
   font-weight: 600;
+}
+.nav__list .nav__item svg {
+  padding-right: 5px;
 }
 
 .nav-open {
@@ -458,13 +465,68 @@ a {
   font-weight: 700;
 }
 
+.product-description p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.product-description .description__title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.product-description .description__scroll {
+  margin-bottom: 20px;
+}
+.product-description .description__scroll .text {
+  color: rgb(255, 64, 83);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 6px;
+}
+.product-description .description__scroll .scroll-track {
+  width: 100%;
+  height: 8px;
+  background-color: rgb(235, 234, 232);
+  border-radius: 90px;
+  position: relative;
+}
+.product-description .description__scroll .scroll-thumb {
+  position: absolute;
+  top: 0;
+  width: 111.29px;
+  height: 8px;
+  border-radius: 90px;
+  background: rgb(255, 64, 83);
+}
+.product-description .description__timer {
+  margin-bottom: 12px;
+  width: 100%;
+  border-radius: 1000px;
+  background: rgb(245, 245, 246);
+  padding: 4px 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+.product-description .description__timer .timer-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+.product-description .description__timer .timer-time {
+  color: rgb(177, 95, 255);
+  font-weight: 600;
+}
+
 .carousel {
   width: 100%;
   overflow-x: scroll;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 .carousel__wrapper {
   display: flex;
@@ -479,6 +541,7 @@ a {
 
 .carousel::-webkit-scrollbar {
   border-radius: 5px;
+  height: 8px;
 }
 
 .carousel::-webkit-scrollbar-track {

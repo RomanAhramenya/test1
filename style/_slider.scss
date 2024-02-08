@@ -2,7 +2,7 @@
   width: 100%;
   overflow-x: scroll;
   user-select: none;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   &__wrapper {
     display: flex;
     flex-wrap: nowrap;
@@ -17,6 +17,7 @@
 }
 .carousel::-webkit-scrollbar {
   border-radius: 5px;
+  height: 8px;
 }
 .carousel::-webkit-scrollbar-track {
   background: #ebeae8; /* цвет дорожки */
