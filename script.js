@@ -49,3 +49,18 @@ buyBtn.addEventListener("click", () => {
 orderClose.addEventListener("click", () => {
   afterpayContainer.classList.remove("afterpay__screen_open");
 });
+
+const shipingBtn = document.querySelector(".free-shiping__btn");
+const freeShipingInfo = document.querySelector(".free-shiping__info");
+
+shipingBtn.addEventListener("click", () => {
+  shipingBtn.classList.toggle("rotate");
+  freeShipingInfo.classList.toggle("height");
+});
+
+const footerBtn = document.querySelector(".footer__btn");
+const footerInfo = document.querySelector(".footer__text");
+
+footerBtn.addEventListener("click", () => {
+  footerInfo.classList.toggle("height");
+});

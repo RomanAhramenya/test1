@@ -1,6 +1,7 @@
 .order {
   margin-bottom: 36px;
   position: relative;
+
   .price {
     margin-bottom: 20px;
     .actual-price {
@@ -104,8 +105,9 @@
     left: 0;
     right: 0;
     background-color: #fff;
-    transform: translateX(120%);
+    transform: translateX(200%);
     transition: 0.4s transform ease-in-out;
+    z-index: 3;
     .afterpay__screen__header {
       display: flex;
       justify-content: space-between;

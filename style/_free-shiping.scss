@@ -1,0 +1,43 @@
+.free-shiping {
+  margin-bottom: 40px;
+
+  .free-shiping__title {
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 16px;
+    span {
+      flex-shrink: 1;
+    }
+    .free-shiping__btn {
+      transition: transform 0.4s ease;
+      transform: rotateX(180deg);
+    }
+  }
+  .free-shiping__info {
+    height: 0px;
+    overflow-y: hidden;
+    transition: all 0.4s ease;
+    .info__images {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      margin-bottom: 12px;
+    }
+    p {
+      color: rgb(107, 107, 107);
+
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+  }
+}
+.rotate {
+  transform: rotateX(0deg) !important;
+}
+.height {
+  height: 153px !important;
+}
