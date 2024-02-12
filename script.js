@@ -38,3 +38,14 @@ function formatTime(time) {
   const seconds = time % 60;
   return `${hours}:${minutes}:${seconds}`;
 }
+
+const buyBtn = document.querySelector(".order-buy__btn");
+const afterpayContainer = document.querySelector(".afterpay__screen");
+const orderClose = afterpayContainer.querySelector(".afterpay__screen-close");
+
+buyBtn.addEventListener("click", () => {
+  afterpayContainer.classList.add("afterpay__screen_open");
+});
+orderClose.addEventListener("click", () => {
+  afterpayContainer.classList.remove("afterpay__screen_open");
+});
